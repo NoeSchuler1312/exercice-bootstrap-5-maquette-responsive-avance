@@ -4,34 +4,42 @@
     <meta charset="utf-8" />
     <title>Exercice Bootstrap 5 - Maquette responsive avancé</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/bootstrap-grid.css" />
     <link rel="stylesheet" href="css/main.css" />
   </head>
   <body>
     <header>
       <div class="container container-header">
-        <div class="row">
-          <div class="col-12 col-md-9 col-xl-10">
-            <a href="#shop">shop</a>
-            <a href="#story">our story</a>
-            <a href="#cook">cook + grow</a>
+        <nav>
+          <div class="row">
+            <div class="col-12 col-md-9 col-xl-10">
+              <a href="#shop">shop</a>
+              <a href="#story">our story</a>
+              <a href="#cook">cook + grow</a>
+            </div>
+            <div class="col-12 col-md-3 col-xl-2">
+              <a href="#login">log in</a>
+              <a href="#contact">contact</a>
+            </div>
           </div>
-          <div class="col-12 col-md-3 col-xl-2">
-            <a href="#login">log in</a>
-            <a href="#contact">contact</a>
-          </div>
-        </div>
+        </nav>
         <div class="row">
           <div class="col-12 col-lg-8 col-xl-6">
             <h1>row</h1>
-            <p class="slogan">a seed company dedicated to deliciousness</p>
+            <p class="p-slogan">a seed company dedicated to deliciousness</p>
           </div>
         </div>
       </div>
     </header>
     <main>
       <div class="container container-main">
-        <div class="row row-3">
+        <div class="row row-left">
           <div class="col-12 col-md-6">
             <img src="img/breeder.jpg" alt="Plant breeder" />
           </div>
@@ -43,10 +51,10 @@
               distribute delicious plant varieties to make an impact in the soil
               and at the table.
             </p>
-            <h3>learn more about us</h3>
+            <h3><a href="">learn more about us</a></h3>
           </div>
         </div>
-        <div class="row">
+        <div class="row row-right">
           <div class="col-12 col-md-6 col-lg-5 col-xl-4">
             <img src="img/ingredients.jpg" alt="Potatoes in pans" />
           </div>
@@ -57,15 +65,15 @@
               field and kitchen, improving the recipe long before an ingredient
               reaches the plate.
             </p>
-            <h3>more about our seeds</h3>
+            <h3><a href="">more about our seeds</a></h3>
           </div>
         </div>
       </div>
-      <div class="container container-main-2">
+      <div class="container container-main-seeds">
         <div class="row">
           <div class="col-12 col-lg-8">
             <h2>our seeds</h2>
-            <p>
+            <p class="p-subtitle">
               All of our seeds are certified organic and produced in the US.
             </p>
             <div class="row">
@@ -89,7 +97,7 @@
           </div>
           <div class="col-12 col-sm-10 col-md-12 col-lg-4">
             <h2>press</h2>
-            <p>They talk about our revolutionary seeds</p>
+            <p class="p-subtitle">They talk about our revolutionary seeds</p>
             <div class="row">
               <div class="col-12 col-md-4 col-lg-12">
                 <img src="img/new-york-times.svg" alt="The New York Times" />
